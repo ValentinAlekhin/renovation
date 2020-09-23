@@ -1,0 +1,78 @@
+@import "/node_modules/normalize-scss/sass/normalize";
+@import "./vars.scss";
+@import "./fonts.scss";
+
+body {
+  font-family: 'Muli-Regular', sans-serif;  
+  background-color: $background_color;
+  color: $font_color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.header {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background-color: $element_color;
+  padding: 20px 50px;
+  border-radius: 10px;
+
+  .header_title {
+    font-size: 36px;
+  }
+
+  .input {
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: $input_color;
+    border-radius: 5px;
+    border: 1px solid $input_border_color;
+    color: $input_font_color;
+    margin-bottom: 30px;
+    transition: all ease-in-out 200ms;
+  
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+
+
+.results {
+  .addressItem {
+    background-color: $element_color;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    .addressString {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-gap: 20px;
+      text-align: center;
+      
+      .adress {
+
+      }
+
+      .district {
+        font-size: 16px;
+      }
+
+      .aria {
+        font-size: 16px;
+      }
+    }
+  }
+}
