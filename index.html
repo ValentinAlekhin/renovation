@@ -11,24 +11,13 @@
 
     <header class="header">
       <h1 class="header_title">Когда меня снесут?</h1>
-      <input class="input" id="addres" type="text" placeholder="Адресс дома">
+      <div class="inputContainer">
+        <img class="inputIcon" src="./../src/icons/search.svg" alt="Search">
+        <input class="input" id="addres" type="text" placeholder="Адресс дома">
+      </div>
     </header>
 
-    
-
-    <div class="results" id="results">
-      <div class="addressItem">
-        <div class="addressString">
-          <h4 class="address">Болотниковская ул., д.54 к.1</h4>
-          <h5 class="district">Зюзино</h5>
-          <h6 class="aria">ЮЗАО</h6>
-      
-        </div>
-        <div class="adressInfo">
-          <h2 class="info">Ваш дом снесут 2020-2024</h2>
-        </div>
-        </div>
-    </div>
+    <div class="results" id="results"></div>
 
   </div>
   <script src="main.js"></script>
